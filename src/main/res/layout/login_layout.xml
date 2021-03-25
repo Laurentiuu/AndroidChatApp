@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:id="@+id/login_layout"
+                                                   android:background="@drawable/background">
+
+    <EditText
+            android:layout_width="220dp"
+            android:layout_height="81dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+
+            android:id="@+id/username"
+            android:textSize="24sp" tools:visibility="visible"
+            android:freezesText="false" android:hint="Username"
+            android:gravity="center"
+            android:textColorHint="#2196F3"
+            android:background="@drawable/roundtext"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"/>
+    <EditText
+            android:layout_width="219dp"
+            android:layout_height="81dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:textSize="24sp" tools:visibility="visible"
+            android:freezesText="false" android:hint="Password"
+            android:gravity="center"
+            android:textColorHint="#2196F3"
+            android:background="@drawable/roundtext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" app:layout_constraintVertical_bias="0.163"/>
+    <Button
+            android:shape="ring"
+            android:text="Go in"
+            android:background="@drawable/button"
+            android:textSize="15dp"
+            android:layout_width="105dp"
+            android:layout_height="95dp"
+            android:id="@+id/login_btn"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="53dp" android:layout_marginStart="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.594"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+            android:layout_width="220dp"
+            android:layout_height="218dp" app:srcCompat="@drawable/hiclipart_com" android:id="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintBottom_toTopOf="@+id/username" app:layout_constraintVertical_bias="0.373"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:text="Register HERE"
+            android:id="@+id/infoTxtCredits"
+            android:layout_centerInParent="true"
+            android:linksClickable="true"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875" app:layout_constraintStart_toStartOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

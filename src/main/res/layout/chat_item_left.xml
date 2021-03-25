@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="300dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true">
+    <ImageView
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/hiclipart"
+            android:id="@+id/profile_pic"
+            tools:layout_editor_absoluteY="3dp"
+            tools:layout_editor_absoluteX="0dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_pic"
+            android:text="hello"
+            android:textSize="20dp"
+            android:id="@+id/show_message"
+            android:padding="8dp"
+            android:background="@drawable/left_msg"
+            android:layout_marginLeft="-8dp"/>
+    </RelativeLayout>
+</RelativeLayout>
